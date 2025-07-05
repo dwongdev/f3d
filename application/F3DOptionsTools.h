@@ -14,7 +14,7 @@
 namespace F3DOptionsTools
 {
 using OptionsDict = std::map<std::string, std::string>;
-using OptionsEntry = std::tuple<OptionsDict, std::string, std::string>;
+using OptionsEntry = std::tuple<OptionsDict, std::string, std::string, std::string>;
 using OptionsEntries = std::vector<OptionsEntry>;
 
 /**
@@ -79,7 +79,9 @@ static inline const std::map<std::string_view, std::string_view> LibOptionsNames
   { "invert-zoom", "interactor.invert_zoom" },
   { "animation-autoplay", "scene.animation.autoplay" },
   { "animation-index", "scene.animation.index" },
+  { "animation-indices", "scene.animation.indices" },
   { "animation-speed-factor", "scene.animation.speed_factor" },
+  { "force-reader", "scene.force_reader" },
   { "font-file", "ui.font_file" },
   { "font-scale", "ui.scale" },
   { "point-sprites", "model.point_sprites.enable" },
@@ -130,6 +132,7 @@ static inline const std::map<std::string_view, std::string_view> LibOptionsNames
   { "anti-aliasing-mode", "render.effect.antialiasing.mode" },
   { "tone-mapping", "render.effect.tone_mapping" },
   { "final-shader", "render.effect.final_shader" },
+  { "textures-transform", "model.textures_transform" },
 };
 
 /**
